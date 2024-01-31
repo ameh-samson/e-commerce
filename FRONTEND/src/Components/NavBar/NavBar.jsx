@@ -19,7 +19,9 @@ const NavBar = () => {
             setMenu("shop");
           }}
         >
-          <Link to="/">Shop</Link>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            Shop
+          </Link>
 
           {menu === "shop" ? <hr /> : <></>}
         </li>
@@ -28,7 +30,10 @@ const NavBar = () => {
             setMenu("men");
           }}
         >
-          <Link to="/mens"> Men</Link>
+          <Link to="/mens" style={{ textDecoration: "none" }}>
+            {" "}
+            Men
+          </Link>
           {menu === "men" ? <hr /> : <></>}
         </li>
         <li
@@ -36,7 +41,10 @@ const NavBar = () => {
             setMenu("women");
           }}
         >
-          <Link to="/womens"> Women</Link>
+          <Link to="/womens" style={{ textDecoration: "none" }}>
+            {" "}
+            Women
+          </Link>
           {menu === "women" ? <hr /> : <></>}
         </li>
         <li
@@ -44,13 +52,16 @@ const NavBar = () => {
             setMenu("kids");
           }}
         >
-          <Link to="/kids"> Kids</Link>
+          <Link to="/kids" style={{ textDecoration: "none" }}>
+            {" "}
+            Kids
+          </Link>
           {menu === "kids" ? <hr /> : <></>}
         </li>
       </ul>
 
       <div className="nav-login-cart">
-        <Link to="/login">
+        <Link to="/login" style={{ textDecoration: "none" }}>
           <button>Login</button>
         </Link>
         <Link to="/cart">
