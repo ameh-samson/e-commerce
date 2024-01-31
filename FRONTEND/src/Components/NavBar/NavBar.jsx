@@ -1,7 +1,7 @@
-import "./NavBar.css";
+import { useState } from "react";
 import logo from "../Assets/logo.png";
 import cart_icon from "../Assets/cart_icon.png";
-import { useState } from "react";
+import "./NavBar.css";
 
 const NavBar = () => {
   const [menu, setMenu] = useState("shop");
